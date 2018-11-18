@@ -8,16 +8,16 @@
   <body>
     <header class="header header-bg" id="header-slide_bg">
       <article class="header__content">
-        <h2 class="header__content-question">Can you build the website of my dreams?</h2>
-        <h1 class="header__content-title">Yup, we can do that.</h1>
-        <div class="header__btn btn" id="pop_up_open"><a class="btn__content">Learn More</a></div>
+        <h2 class="header__content-question wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">Can you build the website of my dreams?</h2>
+        <h1 class="header__content-title wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">Yup, we can do that.</h1>
+        <div class="header__btn btn wow bounceInUp" id="pop_up_open" data-wow-duration="2.5s" data-wow-delay="4.2s"><a class="btn__content">Learn More</a></div>
       </article>
     </header>
     <section class="team">
-      <h4 class="team__title title">Ama<span class="title title-regular">zing</span><span class="title title-bold"> Team</span></h4>
-      <p class="team__description">These wonderful people make work enjoyable</p>
+      <h4 class="team__title title wow fadeIn" data-wow-duration="2s" data-wow-delay=".5s">Ama<span class="title title-regular">zing</span><span class="title title-bold"> Team</span></h4>
+      <p class="team__description wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">These wonderful people make work enjoyable</p>
       <ul class="team__list container">
-        <li class="employee"><img class="employee__img">
+        <li class="employee wow rotateInUpLeft" data-wow-duration="2s" data-wow-delay="1s"><img class="employee__img">
           <h5 class="employee__name">Kimberly Thompson</h5>
           <p class="employee__position">Marketer</p>
           <ul class="social_networks_list">
@@ -35,7 +35,7 @@
                 </svg></a></li>
           </ul>
         </li>
-        <li class="employee"><img class="employee__img">
+        <li class="employee wow fadeIn" data-wow-duration="2s" data-wow-delay="2s"><img class="employee__img">
           <h5 class="employee__name">Rico Massimo</h5>
           <p class="employee__position">Coder</p>
           <ul class="social_networks_list">
@@ -53,7 +53,7 @@
                 </svg></a></li>
           </ul>
         </li>
-        <li class="employee"><img class="employee__img">
+        <li class="employee wow rotateInUpRight" data-wow-duration="2s" data-wow-delay="1s"><img class="employee__img">
           <h5 class="employee__name">Uku Mason</h5>
           <p class="employee__position">Graphic Designer</p>
           <ul class="social_networks_list">
@@ -68,18 +68,22 @@
           </ul>
         </li>
       </ul>
-      <p class="team__description team__description-end">
-        Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+      <p class="team__description team__description-end wow bounceInUp" data-wow-duration="4s" data-wow-delay="1.2s">
+        Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
+         aenean rhoncus posuere odio in tincidunt proin iaculis.
+      </p>
     </section>
     <footer class="footer">
       <div class="footer__wrap container">
         <div class="footer__information">
           <article class="footer__description">
-            <h3 class="footer__title title title-light">Say<span class="title title-bold"> Hello</span></h3>
-            <p class="footer__paragraph">
-              Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
+            <h3 class="footer__title title title-light wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".6s">Say<span class="title title-bold"> Hello</span></h3>
+            <p class="footer__paragraph wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1.2s">
+              Don’t be shy, drop us an email and say hello! We are a really nice
+               bunch of people :)
+            </p>
           </article>
-          <div class="footer__contact">
+          <div class="footer__contact wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1.8s">
             <ul class="contact">
               <li class="contact__item">
                 <svg class="footer_phone contact__svg">
@@ -123,17 +127,18 @@
           </div>
         </div>
         <form class="form" action="">
-          <input class="form__input form__input-name" type="text" placeholder="Your Name*" required>
-          <input class="form__input form__input-email" type="email" placeholder="Your E-mail*" required>
-          <textarea class="form__input form__input-message" name="message" placeholder="Your Message" required></textarea>
+          <input class="form__input form__input-name wow bounceInRight" type="text" placeholder="Your Name*" required data-wow-duration="2s" data-wow-delay=".6s">
+          <input class="form__input form__input-email wow bounceInRight" type="email" placeholder="Your E-mail*" required data-wow-duration="2s" data-wow-delay="1.2s">
+          <textarea class="form__input form__input-message wow bounceInRight" name="message" placeholder="Your Message*" required data-wow-duration="2s" data-wow-delay="1.8s"></textarea>
         </form>
       </div>
-      <p class="footer__copyright">© 2014 Escape by Freebies Xpress • Made In Toronto</p>
+      <p class="footer__copyright wow bounceIn" data-wow-duration="2s" data-wow-delay="1.9s">© 2014 Escape by Freebies Xpress • Made In Toronto</p>
     </footer>
     <div class="pop_up" id="pop_up">
       <p class="pop_up__information">This is Pop Up Menu</p>
       <div class="btn pop_up__btn" id="close_btn"><a class="btn__content pop_up__btn-content">Close</a></div>
     </div>
     <script src="static/js/main.js"></script>
+    <script src="static/js/libs.min.js"></script>
   </body>
 </html>

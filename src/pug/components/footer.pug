@@ -2,11 +2,13 @@ footer.footer
     div.footer__wrap.container
         div.footer__information
             article.footer__description
-                h3.footer__title.title.title-light Say
+                h3.footer__title.title.title-light(class="wow bounceInLeft")(data-wow-duration="2s" data-wow-delay=".6s")
+                    | Say
                     span.title.title-bold  Hello
-                p.footer__paragraph Don’t be shy, drop us an email and say hello! We are a really nice
+                p.footer__paragraph(class="wow bounceInLeft")(data-wow-duration="2s" data-wow-delay="1.2s")
+                    | Don’t be shy, drop us an email and say hello! We are a really nice
                     |  bunch of people :)
-            div.footer__contact
+            div.footer__contact(class="wow bounceInLeft")(data-wow-duration="2s" data-wow-delay="1.8s")
                 ul.contact
                     li.contact__item
                         +icon("footer_phone", "contact__svg")
@@ -28,8 +30,9 @@ footer.footer
                         +icon("footer_pinterest", "contact__svg")
                         p.contact__information pinterest.com/escape
         form(action="").form
-            input.form__input.form__input-name(type='text', placeholder='Your Name*', required)
-            input.form__input.form__input-email(type='email', placeholder='Your E-mail*', required)
-            textarea.form__input.form__input-message(name="message", placeholder='Your Message', required)
+            input.form__input.form__input-name(type='text', placeholder='Your Name*', required)(class="wow bounceInRight")(data-wow-duration="2s" data-wow-delay=".6s")
+            input.form__input.form__input-email(type='email', placeholder='Your E-mail*', required)(class="wow bounceInRight")(data-wow-duration="2s" data-wow-delay="1.2s")
+            textarea.form__input.form__input-message(name="message", placeholder='Your Message*', required)(class="wow bounceInRight")(data-wow-duration="2s" data-wow-delay="1.8s")
 
-    p.footer__copyright © 2014 Escape by Freebies Xpress • Made In Toronto
+    p.footer__copyright(class="wow bounceIn")(data-wow-duration="2s" data-wow-delay="1.9s")
+        | © 2014 Escape by Freebies Xpress • Made In Toronto

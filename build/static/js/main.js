@@ -23,4 +23,15 @@ window.onload = function () {
         document.getElementById("pop_up").style.opacity = 1;
         document.getElementById("pop_up").style.zIndex = 999;
     };
+
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    );
+    wow.init();
 };
