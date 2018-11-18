@@ -1,0 +1,113 @@
+.team{
+  background-color: #111111;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  @include FlexCenter();
+  &__description{
+    font-size: 22px;
+    color: #777777;
+    letter-spacing: -25;
+    font-family: "Brandon Regular";
+    margin: 25px 0 80px 0;
+    text-align: center;
+    &-end{
+      margin-top: 50px;
+      color: #ebebeb;
+      font-size: 20px;
+      width: 55%;
+      @include res('tab'){
+        width: 100%;
+      }
+      @include res('mob'){
+        width: 100%;
+      }
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include res('tab'){
+      flex-direction: column;
+    }
+    @include res('mob'){
+      flex-direction: column;
+    }
+  }
+}
+
+.employee{
+  display:flex;
+  @include FlexCenter();
+  flex-direction: column;
+  &:first-child{
+    @include res('tab'){
+      margin-top: 50px;
+    }
+    @include res('mob'){
+      margin-top: 50px;
+    }
+  }
+  @include res('tab'){
+    margin-top: 70px;
+  }
+  @include res('mob'){
+    margin-top: 70px;
+  }
+  &__img{
+    border: 7px solid white;
+    height: 235px;
+    width: 235px;
+    border-radius: 50%;
+  }
+  &__name, &__position{
+    font-size: 18px;
+  }
+  &__name{
+    color: #fff;
+    font-family: "Brandon Bold";
+    margin: 20px 0 13px 0;
+  }
+  &__position{
+    font-family: "Brandon Regular";
+    color: #ebebeb;
+  }
+}
+.social_networks_list{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  &__svg{
+    width: 42px;
+    height: 42px;
+    fill: #ffffff;
+    &:nth-of-type(1){
+      margin: 0 10px;
+    }
+  }
+}
+.facebook{
+  transition: .5s;
+  &:hover{
+    fill: #3b5998;
+  }
+}
+.twitter{
+  transition: .5s;
+  &:hover{
+    fill: #00aced;
+  }
+}
+.google{
+  transition: .5s;
+  &:hover{
+    fill: #d95232;
+  }
+}
+.pinterest{
+  transition: .5s;
+  &:hover{
+    fill: #cb2028;
+  }
+}

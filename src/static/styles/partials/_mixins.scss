@@ -1,0 +1,71 @@
+@mixin AbsoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin AbsoluteXCenter() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin AbsoluteYCenter() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin FlexCenter(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin Size($a, $b:false){
+  width:$a + px;
+  @if($b) {
+    height: $b + px;
+  }
+  @else {
+    height: $a + px;
+  }
+}
+.container{
+  max-width: 940px;
+  margin: 0 auto;
+  width: 100%;
+  @include res('tab'){
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  @include res('mob'){
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.btn{
+  width: 240px;
+  height: 65px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: .5s;
+  &__content{
+    font-family: "Brandon Bold";
+    font-size: 23px;
+    line-height: 65px;
+  }
+}
+.title{
+  font-size: 60px;
+  color: #fff;
+  letter-spacing: -25;
+  font-family: "Brandon Light";
+  &-regular{
+    font-family: "Brandon Regular";
+  }
+  &-bold{
+    font-family: "Brandon Bold";
+  }
+}

@@ -1,0 +1,15 @@
+include ../partials/mixins
+include ../partials/variables
+
+doctype html
+html(lang="ua=UA")
+    head
+        title #{title}
+        link(rel="stylesheet" type='text/css' href="static/css/main.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        include ../components/header
+        include ../components/team
+        include ../components/footer
+        include ../components/pop_up
+        script(src = 'static/js/main.js')
