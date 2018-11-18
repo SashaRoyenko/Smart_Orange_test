@@ -70,7 +70,8 @@
         justify-content: space-around;
       }
       @include res('mob'){
-        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
       }
     }
   &__copyright{
@@ -89,7 +90,8 @@
       margin: 0;
     }
     @include res('mob'){
-      margin: 0;
+      margin-right: 0;
+      margin-top: 40px;
     }
   }
   &__item{
